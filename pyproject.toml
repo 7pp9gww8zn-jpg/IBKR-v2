@@ -1,0 +1,27 @@
+[project]
+name = "ibkr-quant"
+version = "0.1.0"
+description = "IBKR automated swing trading engine"
+requires-python = ">=3.11"
+dependencies = [
+    "ib_insync>=0.9.86",
+    "aiosqlite>=0.22.0",
+    "apscheduler>=3.11.0",
+    "pandas>=2.0.0",
+    "numpy>=1.26.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "nest_asyncio>=1.6.0",
+    "pytz>=2024.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

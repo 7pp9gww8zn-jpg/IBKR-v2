@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+logs/
+data/
+.venv/
+.env
+*.db
+*.sqlite
+engine_status.json
+*.json.tmp
+.DS_Store
